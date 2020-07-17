@@ -1,136 +1,84 @@
+/*css holy grail layout https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
+jo franchetti*/  
 
-@media (min-width: 480px){
-    /*mobile device*/
-        * { 
-            color: white;
-            font-size: larger;
-            text-align: center;}
-        p {
-            background-color: aqua;
-            width: 100%;
-            height: 75px;
+@media (min-width: 480px) {
+        .container {
+          display: grid;
+          grid-template-columns: 200px 1fr 200px;
+          grid-template-rows: auto 1fr auto;
+      
         }
-        .b {
-            background-color: orange;
-            width: 100%;
-            height: 150px;
-             }
-        .c {
-            background-color: chartreuse;
-            width: 100%;
-            height: 125px;
-         }
-        
-        .d {
-            background-color: palevioletred;
-            width: 100%;
-            height: 125px;
-             }
-        
-        .e {
-            background-color: fuchsia;
-            width: 50%;
-            height: 250px;
-            float: left;
-        }
-        
-        .f {
-            background-color: blue;
-            width:  50%;
-            height: 250px;
-            float: right;
-        }
-        .g {
-            background-color: maroon;
-            width:  50%;
-            height: 250px;
-            float: left;
-        }
-        .h {
-            background-color: deeppink;
-            width:  50%;
-            height: 250px;
-            float: right;
-        }
-        
-        footer {
-            background-color: royalblue;
-            width: 100%;
-            height: 80px;
-            margin-top: 100px;
-        }
-        body{
-            height: 767px;
-            background: olivedrab;
-        };
+      }
+   
+    header {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #369;
+    color: white;
     }
     
-    @media(min-width:961px){
-        /*desktop*/
-        * { 
-            color: white;
-            font-size: larger;
-            text-align: center;}
-    
-            p {
-                background-color: aqua;
-                width: 100%;
-                height: 100px;
-            }
-            .b {
-                background-color: orange;
-                width: 20%;
-                height: 600px;
-                float: left;
-                 }
-            .c {
-                background-color: chartreuse;
-                width: 40%;
-                height: 200px;
-                float: right;
-             }
-            
-            .d {
-                background-color: palevioletred;
-                width: 40%;
-                height: 200px;
-                float: right;
-                 }
-            
-            .e {
-                background-color: fuchsia;
-                width: 20%;
-                height: 250px;
-                float: left;
-            }
-            
-            .f {
-                background-color: blue;
-                width:  20%;
-                height: 250px;
-                float: right;
-            }
-            .g {
-                background-color: maroon;
-                width:  20%;
-                height: 250px;
-                float: left;
-            }
-            .h {
-                background-color: deeppink;
-                width:  20%;
-                height: 250px;
-                float: right;
-            }
-            
-            footer {
-                background-color: royalblue;
-                width: 80%;
-                height: 150px;
-                float: right;
-            }
-        body{
-            background-color: burlywood;
-            height: 768px;
+    div {
+    flex: 1;
+    padding: 0px;
+    }
+
+    section.e {
+        flex: 1;
+        /* padding: 25%; */
+        background-color: #936;
+        width: 50%;
+        height: 50%;
+        float: left;
         }
+    section.f {
+        flex: 1;
+        /* padding: 25%; */
+        background-color: blue;
+        width: 50%;
+        height: 50%;
+        float: right;
+        }
+    section.g {
+        flex: 1;
+        /* padding: 25%; */
+        background-color:blueviolet;
+        width: 50%;
+        height: 50%;
+        float: left;
+        }
+    section.h {
+        flex: 1;
+        /* padding: 25%; */
+        background-color: yellowgreen;
+        width: 50%;
+        height: 50%;
+        float: right;
+        
+        }
+    
+    nav.c {
+    background-color: #f90;
+    padding: 20px;
+    }
+    
+    nav.d{
+    padding: 20px;
+    background-color: #936;
+    }
+    
+    footer {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #690;
+    color: white;
+    }
+    
+    h1 {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
     }
