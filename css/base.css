@@ -10,14 +10,9 @@
  #i {order:7;}
 }
 
-@media (min-width: 951px){
-   /*desktop*/
- #b {flex: 2 0px;}
- #c {order:1;}   
- #d {order:6;}
- #e {order:2;}
- #f {order:3;}
- #g {order:4;}
- #h {order:5;}
- #i {order:7;}
-}
+
+.container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
